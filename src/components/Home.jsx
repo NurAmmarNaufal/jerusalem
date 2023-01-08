@@ -29,6 +29,7 @@ const Home = () => {
         <div
           className="flex flex-col md:flex-row items-center gap-2 cursor-pointer group"
           title="klick to read more"
+          onClick={() => {window.open('/domofrock', '_self')}}
         >
           <div className="w-[42px] h-[42px] relative">
             <div className="w-[42px] h-[42px] rounded-full border-[3px] border-dashed border-[#E5AD7E] flex justify-center items-center group-hover:animate-putar absolute"></div>

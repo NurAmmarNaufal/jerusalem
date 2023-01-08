@@ -9,8 +9,6 @@ import outerDec from "../assets/outer-decoration.jpg";
 const DomOfRock = () => {
   const [state, setState] = useState({ h: 1, e: 0, g: 0 });
 
-  console.log(state);
-
   const active = "text-white border-white text-right";
   const inActive =
     "text-[#818181] border-[#818181] text-left cursor-pointer hover:animate-geser";

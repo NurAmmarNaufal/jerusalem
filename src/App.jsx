@@ -1,11 +1,14 @@
 import Home from "./components/Home";
 import DomOfRock from "./components/DomOfRock";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="font-laila">
-      <Home />
-      {/* <DomOfRock /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/domofrock" element={<DomOfRock />} />
+      </Routes>
     </div>
   );
 }
