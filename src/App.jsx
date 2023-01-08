@@ -7,7 +7,7 @@ function App() {
     <div className="font-laila">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/domofrock" element={<DomOfRock />} />
+        <Route path="/domeofrock" element={<DomOfRock />} />
       </Routes>
     </div>
   );
