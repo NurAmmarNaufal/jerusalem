@@ -14,17 +14,17 @@ const DomOfRock = () => {
     "text-[#818181] border-[#818181] text-left cursor-pointer hover:animate-geser";
 
   return (
-    <div className="bg-[#222123] h-screen w-screen relative">
+    <div className="bg-[#222123] h-screen w-screen relative md:flex md:pt-[50px]">
       {/* logo */}
-      <div className="absolute top-[30px] left-[30px]">
+      <div className="absolute top-[30px] left-[30px] cursor-pointer" onClick={() => {window.open('/', '_self')}} title="Home">
         <img src={logo} alt="logo" className="h-[40px] drop-shadow-lg" />
       </div>
 
       {/* content menu */}
-      <div className="text-white pt-[40px]">
+      <div className="text-white pt-[40px] flex-1 md:self-center md:-mt-[150px]">
         <div id="left" className="flex justify-center items-center flex-col">
-          <p className="font-bold text-xl">Dome of Rock</p>
-          <div className="mt-[50px] flex gap-2">
+          <p className="font-bold text-xl md:text-[40px]">Dome of Rock</p>
+          <div className="mt-[50px] md:mt-[100px] flex gap-2 md:flex-col">
             <div
               className={`w-auto md:w-[250px] border-b-4 py-2 ${
                 state.h ? active : inActive
@@ -60,21 +60,19 @@ const DomOfRock = () => {
       </div>
 
       {/* content doc  */}
-      <div className="mt-10 mx-[30px] h-[400px] text-white overflow-y-auto">
+      <div className=" flex-1 mt-10 mx-[30px] h-[400px] md:h-[450px] text-white overflow-y-auto">
         {/* history */}
         <div
           className={`flex flex-col items-center ${
             state.h ? "inline" : "hidden"
           }`}
         >
-          <div className="w-full">
+          <div className="w-full md:w-1/2">
             <img src={dom} alt="dom" />
           </div>
           <div className="mt-3">
             <p className="indent-5">
-              Dome of the Rock, Arabic Qubbat al-Ṣakhrah, shrine in Jerusalem
-              built by the Umayyad caliph ʿAbd al-Malik ibn Marwān in the late
-              7th century CE. It is the oldest extant Islamic monument.
+              Dome of the Rock, Arabic (قبة الصخرة) Qubbat al-Ṣakhrah, shrine in Jerusalem built by the Umayyad caliph ʿAbd al-Malik ibn Marwān in the late 7th century CE. It is the oldest extant Islamic monument.
             </p>
             <p className="indent-5">
               The structure is situated on a flat elevated plaza known to
@@ -106,7 +104,7 @@ const DomOfRock = () => {
             state.e ? "inline" : "hidden"
           }`}
         >
-          <div className="w-full">
+          <div className="w-full md:w-1/2">
             <img src={DomeRockStructure} alt="dom" />
           </div>
           <div className="mt-3 flex flex-col items-center">
@@ -124,7 +122,7 @@ const DomOfRock = () => {
               the inner one. Both the circular drum and the exterior walls
               contain many windows.
             </p>
-            <div className="w-full mt-3">
+            <div className="w-full mt-3 md:w-1/2">
               <img src={DomeRockStructure2} alt="dom" />
             </div>
             <p className="font-bold mt-3 self-start">Interior decoration</p>
@@ -136,7 +134,7 @@ const DomOfRock = () => {
               the third person) and are mixed with pious inscriptions not in the
               Quran.
             </p>
-            <div className="w-full mt-3">
+            <div className="w-full mt-3 md:w-1/2">
               <img src={innerDom} alt="innerDom" />
             </div>
             <p className="indent-5 mt-2">
@@ -160,7 +158,7 @@ const DomOfRock = () => {
               Al-Isra, the Surah 17 which tells the story of the Isra or Night
               Journey, is inscribed above this.
             </p>
-            <div className="w-full mt-3">
+            <div className="w-full mt-3 md:w-1/2">
               <img src={outerDec} alt="douterDec" />
             </div>
           </div>

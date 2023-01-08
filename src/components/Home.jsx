@@ -15,8 +15,8 @@ const Home = () => {
         loop
         className="w-full h-full object-cover"
       ></video>
-      <div className="absolute top-[30px] left-[30px]">
-        <img src={logo} alt="logo" className="h-[40px] drop-shadow-lg" />
+      <div className="absolute top-[30px] left-[30px]" >
+        <img src={logo} alt="logo" className="h-[40px] drop-shadow-lg"/>
       </div>
       <div className="absolute top-0  h-full w-full text-white flex justify-center items-center flex-col -mt-10">
         <p className="text-[60px] md:text-[100px]">Jerusalem</p>
@@ -38,11 +38,9 @@ const Home = () => {
               alt="dome"
               className="w-[30px] h-[30px] rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
             />
-            <div className="w-[200px] h-[100px] bg-white p-2 absolute -top-[120px] -left-1 sm:left-[30px] sm:-translate-x-1/2 rounded-lg hidden opacity-0 group-hover:inline group-hover:opacity-100 ">
+            <div className="w-[200px] h-[100px] bg-white p-2 absolute -top-[120px] -left-1 sm:left-[30px] sm:-translate-x-1/2 rounded-lg hidden opacity-0 md:group-hover:inline group-hover:opacity-100 ">
               <p className="text-[11px]">
-                The Dome of the Rock (Arabic: قبة الصخرة, romanized: Qubbat
-                aṣ-Ṣakhra) is an Islamic shrine located on the Temple Mount in
-                the Old City of Jerusalem ...{" "}
+              Dome of the Rock, Arabic (قبة الصخرة) Qubbat al-Ṣakhrah, shrine in Jerusalem built by the Umayyad caliph ʿAbd al-Malik ibn Marwān in the late 7th century CE. It's...
                 <span className="md:hidden text-blue-500 underline">
                   Read more
                 </span>
