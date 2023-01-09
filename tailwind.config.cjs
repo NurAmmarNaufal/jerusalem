@@ -21,5 +21,7 @@ module.exports = {
       laila: "Laila",
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
 };

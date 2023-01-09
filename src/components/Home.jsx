@@ -63,9 +63,7 @@ const Home = () => {
             />
             <div className="w-[200px] h-[100px] bg-white p-2 absolute -top-[120px] left-[30px] -translate-x-1/2 rounded-lg hidden opacity-0 group-hover:inline group-hover:opacity-100 ">
               <p className="text-[10px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate vel sed dignissimos temporibus reprehenderit
-                reiciendis sit molestiae ab distinctio ut...
+              The Western Wall (Hebrew: הַכּוֹתֶל הַמַּעֲרָבִי, romanized: HaKotel HaMa'aravi, lit. 'the western wall',[1] often shortened to the Kotel or Kosel), known in the West as the Wailing Wall, and in Islam as the Buraq Wall ...
                 <span className="md:hidden text-blue-500 underline">
                   Read more
                 </span>

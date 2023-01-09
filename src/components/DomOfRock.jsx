@@ -60,7 +60,7 @@ const DomOfRock = () => {
       </div>
 
       {/* content doc  */}
-      <div className=" flex-1 mt-10 mx-[30px] h-[400px] md:h-[450px] text-white overflow-y-auto">
+      <div className=" flex-1 mt-10 mx-[30px] h-[400px] md:h-[450px] text-white overflow-y-auto scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
         {/* history */}
         <div
           className={`flex flex-col items-center ${
