@@ -1,10 +1,12 @@
 import { useState } from "react";
 import logo from "../assets/logo-white.png";
 import dom from "../assets/dome-of-rock2.webp";
+import church from "../assets/The-Church.webp";
 import DomeRockStructure from "../assets/DomeRockStructure.jpg";
 import DomeRockStructure2 from "../assets/DomeRockStructure2.jpg";
 import innerDom from "../assets/inner-dom.jpg";
 import outerDec from "../assets/outer-decoration.jpg";
+import Domegallery from "./gallery/Domegallery";
 
 const DomOfRock = () => {
   const [state, setState] = useState({ h: 1, e: 0, g: 0 });
@@ -16,7 +18,13 @@ const DomOfRock = () => {
   return (
     <div className="bg-[#222123] h-screen w-screen relative md:flex md:pt-[50px]">
       {/* logo */}
-      <div className="absolute top-[30px] left-[30px] cursor-pointer" onClick={() => {window.open('/', '_self')}} title="Home">
+      <div
+        className="absolute top-[30px] left-[30px] cursor-pointer"
+        onClick={() => {
+          window.open("/", "_self");
+        }}
+        title="Home"
+      >
         <img src={logo} alt="logo" className="h-[40px] drop-shadow-lg" />
       </div>
 
@@ -60,7 +68,7 @@ const DomOfRock = () => {
       </div>
 
       {/* content doc  */}
-      <div className=" flex-1 mt-10 mx-[30px] h-[400px] md:h-[450px] text-white overflow-y-auto scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent">
+      <div className=" flex-1 mt-10 mx-[30px] h-[400px] md:h-[450px] text-white overflow-y-auto scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent relative">
         {/* history */}
         <div
           className={`flex flex-col items-center ${
@@ -72,7 +80,9 @@ const DomOfRock = () => {
           </div>
           <div className="mt-3">
             <p className="indent-5">
-              Dome of the Rock, Arabic (قبة الصخرة) Qubbat al-Ṣakhrah, shrine in Jerusalem built by the Umayyad caliph ʿAbd al-Malik ibn Marwān in the late 7th century CE. It is the oldest extant Islamic monument.
+              Dome of the Rock, Arabic (قبة الصخرة) Qubbat al-Ṣakhrah, shrine in
+              Jerusalem built by the Umayyad caliph ʿAbd al-Malik ibn Marwān in
+              the late 7th century CE. It is the oldest extant Islamic monument.
             </p>
             <p className="indent-5">
               The structure is situated on a flat elevated plaza known to
@@ -149,14 +159,14 @@ const DomOfRock = () => {
             <p className="indent-5 mt-1">
               The decoration of the outer walls went through two major phases:
               the initial Umayyad scheme comprised marble and mosaics, much like
-              the interior walls. Sixteenth-century Ottoman sultan Suleyman
-              the Magnificent replaced it with Turkish faience tiles. The
-              Ottoman tile decoration was replaced in the 1960s with faithful
-              copies produced in Italy. Surah Ya Sin (the 'Heart of the
-              Quran') is inscribed across the top of the tile work and was
-              commissioned in the 16th century by Suleiman the Magnificent.
-              Al-Isra, the Surah 17 which tells the story of the Isra or Night
-              Journey, is inscribed above this.
+              the interior walls. Sixteenth-century Ottoman sultan Suleyman the
+              Magnificent replaced it with Turkish faience tiles. The Ottoman
+              tile decoration was replaced in the 1960s with faithful copies
+              produced in Italy. Surah Ya Sin (the 'Heart of the Quran') is
+              inscribed across the top of the tile work and was commissioned in
+              the 16th century by Suleiman the Magnificent. Al-Isra, the Surah
+              17 which tells the story of the Isra or Night Journey, is
+              inscribed above this.
             </p>
             <div className="w-full mt-3 md:w-1/2">
               <img src={outerDec} alt="douterDec" />
@@ -169,9 +179,7 @@ const DomOfRock = () => {
             state.g ? "inline" : "hidden"
           }`}
         >
-          <div>
-
-          </div>
+          <Domegallery />
         </div>
       </div>
     </div>

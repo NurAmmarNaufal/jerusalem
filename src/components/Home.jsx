@@ -1,8 +1,8 @@
 import videoBg from "../assets/bg.mp4";
 import logo from "../assets/logo-white.png";
 import dome from "../assets/dome-of-rock2.webp";
-import wall from "../assets/western-wall.jpg";
-import church from "../assets/The-Church.jpg";
+import wall from "../assets/western-wall.webp";
+import church from "../assets/The-Church.webp";
 
 const Home = () => {
   return (
@@ -15,8 +15,8 @@ const Home = () => {
         loop
         className="w-full h-full object-cover"
       ></video>
-      <div className="absolute top-[30px] left-[30px]" >
-        <img src={logo} alt="logo" className="h-[40px] drop-shadow-lg"/>
+      <div className="absolute top-[30px] left-[30px]">
+        <img src={logo} alt="logo" className="h-[40px] drop-shadow-lg" />
       </div>
       <div className="absolute top-0  h-full w-full text-white flex justify-center items-center flex-col -mt-10">
         <p className="text-[60px] md:text-[100px]">Jerusalem</p>
@@ -29,7 +29,9 @@ const Home = () => {
         <div
           className="flex flex-col md:flex-row items-center gap-2 cursor-pointer group"
           title="klick to read more"
-          onClick={() => {window.open('/domeofrock', '_self')}}
+          onClick={() => {
+            window.open("/domeofrock", "_self");
+          }}
         >
           <div className="w-[42px] h-[42px] relative">
             <div className="w-[42px] h-[42px] rounded-full border-[3px] border-dashed border-[#E5AD7E] flex justify-center items-center group-hover:animate-putar absolute"></div>
@@ -40,10 +42,9 @@ const Home = () => {
             />
             <div className="w-[200px] h-[100px] bg-white p-2 absolute -top-[120px] -left-1 sm:left-[30px] sm:-translate-x-1/2 rounded-lg hidden opacity-0 md:group-hover:inline group-hover:opacity-100 ">
               <p className="text-[11px]">
-              Dome of the Rock, Arabic (قبة الصخرة) Qubbat al-Ṣakhrah, shrine in Jerusalem built by the Umayyad caliph ʿAbd al-Malik ibn Marwān in the late 7th century CE. It's...
-                <span className="md:hidden text-blue-500 underline">
-                  Read more
-                </span>
+                Dome of the Rock, Arabic (قبة الصخرة) Qubbat al-Ṣakhrah, shrine
+                in Jerusalem built by the Umayyad caliph ʿAbd al-Malik ibn
+                Marwān in the late 7th century CE. It's...
               </p>
               <div className="w-[15px] h-[15px] bg-white absolute rotate-45 -bottom-2 left-8 sm:left-1/2 -translate-x-[17px]"></div>
             </div>
@@ -61,9 +62,12 @@ const Home = () => {
               alt="wall"
               className="w-[30px] h-[30px] rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
             />
-            <div className="w-[200px] h-[100px] bg-white p-2 absolute -top-[120px] left-[30px] -translate-x-1/2 rounded-lg hidden opacity-0 group-hover:inline group-hover:opacity-100 ">
+            <div className="w-[200px] h-[100px] bg-white p-2 absolute -top-[120px] left-[30px] -translate-x-1/2 rounded-lg hidden opacity-0 md:group-hover:inline group-hover:opacity-100 ">
               <p className="text-[10px]">
-              The Western Wall (Hebrew: הַכּוֹתֶל הַמַּעֲרָבִי, romanized: HaKotel HaMa'aravi, lit. 'the western wall',[1] often shortened to the Kotel or Kosel), known in the West as the Wailing Wall, and in Islam as the Buraq Wall ...
+                The Western Wall (Hebrew: הַכּוֹתֶל הַמַּעֲרָבִי, romanized:
+                HaKotel HaMa'aravi, lit. 'the western wall',[1] often shortened
+                to the Kotel or Kosel), known in the West as the Wailing Wall,
+                and in Islam as the Buraq Wall ...
                 <span className="md:hidden text-blue-500 underline">
                   Read more
                 </span>
@@ -84,7 +88,7 @@ const Home = () => {
               alt="church"
               className="w-[30px] h-[30px] rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
             />
-            <div className="w-[200px] h-[100px] bg-white p-2 absolute -top-[120px] -right-2 sm:right-[30px] sm:translate-x-1/2 rounded-lg hidden opacity-0 group-hover:inline group-hover:opacity-100 ">
+            <div className="w-[200px] h-[100px] bg-white p-2 absolute -top-[120px] -right-2 sm:right-[30px] sm:translate-x-1/2 rounded-lg hidden opacity-0 md:group-hover:inline group-hover:opacity-100 ">
               <p className="text-[10px]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptate vel sed dignissimos temporibus reprehenderit
