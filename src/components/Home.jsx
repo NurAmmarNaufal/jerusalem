@@ -15,9 +15,9 @@ const Home = () => {
         loop
         className="w-full h-full object-cover"
       ></video>
-      <div className="absolute top-[30px] left-[30px]">
+      {/* <div className="absolute top-[30px] left-[30px]">
         <img src={logo} alt="logo" className="h-[40px] drop-shadow-lg" />
-      </div>
+      </div> */}
       <div className="absolute top-0  h-full w-full text-white flex justify-center items-center flex-col -mt-10">
         <p className="text-[60px] md:text-[100px]">Jerusalem</p>
         <p className="-mt-2 md:-mt-5 text-sm md:text-base">
@@ -54,6 +54,9 @@ const Home = () => {
         <div
           className="flex flex-col md:flex-row items-center gap-2 cursor-pointer group"
           title="klick to read more"
+          onClick={() => {
+            window.open("/wailingwall", "_self");
+          }}
         >
           <div className="w-[42px] h-[42px] relative">
             <div className="w-[42px] h-[42px] rounded-full border-[3px] border-dashed border-[#E5AD7E] flex justify-center items-center group-hover:animate-putar absolute"></div>

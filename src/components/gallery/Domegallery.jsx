@@ -3,15 +3,15 @@ import { Icon } from "@iconify/react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const Access_Key = "dSPvEpMqL1dX1X65RJItyi_MIFmLD9eBv3e-ebJtKu8";
-const img = "al aqsa";
 
-const DomeGallery = () => {
+const DomeGallery = (props) => {
+  console.log(props)
   const [images, setImages] = useState([]);
   const [zoom, setZoom] = useState({ img: "", i: -1 });
 
   const fetchRequest = async () => {
     const data = await fetch(
-      `https://api.unsplash.com/search/photos?page=1&query=${img}&client_id=${Access_Key}`
+      `https://api.unsplash.com/search/photos?page=1&query=${props.props}&client_id=${Access_Key}`
     );
     const dataJ = await data.json();
     const result = dataJ.results;
@@ -54,21 +54,21 @@ const DomeGallery = () => {
             icon="mdi:close-box"
             color="white"
             width="30"
-            className="absolute top-0 left-1/2 -translate-x-1/2 cursor-pointer z-[999]"
+            className="absolute top-0 left-1/2 -translate-x-1/2 cursor-pointer z-[999] opacity-30 hover:opacity-100"
             onClick={() => arrows()}
           />
           <Icon
             icon="material-symbols:arrow-circle-right-rounded"
             color="white"
             width="30"
-            className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer"
+            className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer opacity-50 hover:opacity-100"
             onClick={() => arrows('right')}
           />
           <Icon
             icon="material-symbols:arrow-circle-right-rounded"
             color="white"
             width="30"
-            className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer rotate-180"
+            className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer rotate-180 opacity-50 hover:opacity-100"
             onClick={() => arrows('left')}
           />
           <img src={zoom.img.urls.full} className="h-full object-contain" />

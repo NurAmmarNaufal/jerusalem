@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo-white.png";
-import dom from "../assets/dome-of-rock2.webp";
+import wall from "../assets/western-wall.webp";
 import church from "../assets/The-Church.webp";
 import DomeRockStructure from "../assets/DomeRockStructure.jpg";
 import DomeRockStructure2 from "../assets/DomeRockStructure2.jpg";
@@ -8,7 +8,7 @@ import innerDom from "../assets/inner-dom.jpg";
 import outerDec from "../assets/outer-decoration.jpg";
 import Domegallery from "./gallery/Domegallery";
 
-const DomOfRock = () => {
+const WailingWall = () => {
   const [state, setState] = useState({ h: 1, e: 0, g: 0 });
 
   const active = "text-white border-white text-right";
@@ -31,7 +31,7 @@ const DomOfRock = () => {
       {/* content menu */}
       <div className="text-white pt-[40px] flex-1 md:self-center md:-mt-[150px]">
         <div id="left" className="flex justify-center items-center flex-col">
-          <p className="font-bold text-xl md:text-[40px]">Dome of Rock</p>
+          <p className="font-bold text-xl md:text-[40px]">Wailing Wall</p>
           <div className="mt-[50px] md:mt-[100px] flex gap-2 md:flex-col">
             <div
               className={`w-auto md:w-[250px] border-b-4 py-2 ${
@@ -76,35 +76,14 @@ const DomOfRock = () => {
           }`}
         >
           <div className="w-full md:w-1/2">
-            <img src={dom} alt="dom" />
+            <img src={wall} alt="wall" />
           </div>
           <div className="mt-3">
             <p className="indent-5">
-              Dome of the Rock, Arabic (قبة الصخرة) Qubbat al-Ṣakhrah, shrine in
-              Jerusalem built by the Umayyad caliph ʿAbd al-Malik ibn Marwān in
-              the late 7th century CE. It is the oldest extant Islamic monument.
+            The Western Wall (Hebrew: הַכּוֹתֶל הַמַּעֲרָבִי, romanized: HaKotel HaMa'aravi, lit. 'the western wall', often shortened to the Kotel or Kosel), known in the West as the Wailing Wall, and in Islam as the Buraq Wall (Arabic: حَائِط ٱلْبُرَاق, Ḥā'iṭ al-Burāq), is a portion of ancient limestone wall in the Old City of Jerusalem that forms part of the larger retaining wall of the hill known to Jews and Christians as the Temple Mount. Just over half the wall's total height, including its 17 courses located below street level, dates from the end of the Second Temple period, and is believed to have been begun by Herod the Great, The very large stone blocks of the lower courses are Herodian, the courses of medium-sized stones above them were added during the Umayyad period, while the small stones of the uppermost courses are of more recent date, especially from the Ottoman period.
             </p>
             <p className="indent-5">
-              The structure is situated on a flat elevated plaza known to
-              Muslims as al-Ḥaram al-Sharīf (“The Noble Sanctuary”) and to Jews
-              as the Temple Mount (the site where the Temple of Jerusalem once
-              stood). According to Muslims, the rock above which the dome is
-              constructed is the spot from which the Prophet Muhammad was taken
-              up into heaven for an encounter with God (an event known as the
-              Miʿrāj). Nearby, on the southern extreme of the plaza, is Al-Aqṣā
-              Mosque. Muslims believe the Prophet was miraculously transported
-              there from Mecca on the night of his encounter{" "}
-              <span
-                className="hover:underline"
-                title="Isra and Mi'raj, also known as Al Isra' wal Miraj, is observed on the 27th day of the month of Rajab, the seventh month in the Islamic calendar. This event marks the night that Allah (God) took Mohammad (also known as Mohamed or Muhammed) on a journey from Mecca to Jerusalem and then to heaven."
-              >
-                (Isrāʾ)
-                {/* <div cl>
-
-              </div> */}
-              </span>
-              . The term “Al-Aqṣā Mosque” is commonly extended to denote the
-              entire plaza and, consequently, to the Dome of the Rock itself.
+            The Western Wall plays an important role in Judaism due to its proximity to the Temple Mount. Because of the Temple Mount entry restrictions, the Wall is the holiest place where Jews are permitted to pray outside the previous Temple Mount platform, as the presumed site of the Holy of Holies, the most sacred site in the Jewish faith, lies just behind it. The original, natural, and irregular-shaped Temple Mount was gradually extended to allow for an ever-larger Temple compound to be built at its top. The earliest source mentioning this specific site as a place of Jewish worship is from the 17th century. It also has a place in Muslim tradition, in which it is believed to be the site where the Islamic Prophet Muhammad tied his winged steed, al-Buraq, on his Isra and Mi'raj to Jerusalem before ascending to paradise, and constitutes the western border of al-Haram al-Sharif ("the Noble Sanctuary"), or the Al-Aqsa compound.
             </p>
           </div>
         </div>
@@ -115,7 +94,7 @@ const DomOfRock = () => {
           }`}
         >
           <div className="w-full md:w-1/2">
-            <img src={DomeRockStructure} alt="dom" />
+            <img src={DomeRockStructure} alt="wall" />
           </div>
           <div className="mt-3 flex flex-col items-center">
             <p className="font-bold self-start">Basic Structure</p>
@@ -133,7 +112,7 @@ const DomOfRock = () => {
               contain many windows.
             </p>
             <div className="w-full mt-3 md:w-1/2">
-              <img src={DomeRockStructure2} alt="dom" />
+              <img src={DomeRockStructure2} alt="wall" />
             </div>
             <p className="font-bold mt-3 self-start">Interior decoration</p>
             <p className="indent-5 mt-1">
@@ -179,11 +158,11 @@ const DomOfRock = () => {
             state.g ? "inline" : "hidden"
           }`}
         >
-          <Domegallery props={'al aqsa'} />
+          <Domegallery props={'wailing wall'} />
         </div>
       </div>
     </div>
   );
 };
 
-export default DomOfRock;
+export default WailingWall;
