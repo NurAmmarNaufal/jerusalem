@@ -1,12 +1,13 @@
 import { useState } from "react";
 import logo from "../assets/logo-white.png";
-import dom from "../assets/dome-of-rock2.webp";
-import church from "../assets/The-Church.webp";
+// import dom from "../assets/dome-of-rock2.webp";
 import DomeRockStructure from "../assets/DomeRockStructure.jpg";
 import DomeRockStructure2 from "../assets/DomeRockStructure2.jpg";
 import innerDom from "../assets/inner-dom.jpg";
 import outerDec from "../assets/outer-decoration.jpg";
-import Domegallery from "./gallery/Domegallery";
+import Gallery from "./gallery/Gallery";
+
+const dom = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/%D7%94%D7%A8_%D7%94%D7%91%D7%99%D7%AA_%D7%9E%D7%93%D7%A8%D7%95%D7%9D_%D7%9E%D7%A2%D7%A8%D7%91.jpg/1280px-%D7%94%D7%A8_%D7%94%D7%91%D7%99%D7%AA_%D7%9E%D7%93%D7%A8%D7%95%D7%9D_%D7%9E%D7%A2%D7%A8%D7%91.jpg'
 
 const DomOfRock = () => {
   const [state, setState] = useState({ h: 1, e: 0, g: 0 });
@@ -179,7 +180,7 @@ const DomOfRock = () => {
             state.g ? "inline" : "hidden"
           }`}
         >
-          <Domegallery props={'al aqsa'} />
+          <Gallery props={'al aqsa'} />
         </div>
       </div>
     </div>

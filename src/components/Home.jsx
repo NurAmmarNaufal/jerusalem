@@ -83,6 +83,9 @@ const Home = () => {
         <div
           className="flex flex-col md:flex-row items-center gap-2 cursor-pointer group"
           title="klick to read more"
+          onClick={() => {
+            window.open("/church", "_self");
+          }}
         >
           <div className="w-[42px] h-[42px] relative">
             <div className="w-[42px] h-[42px] rounded-full border-[3px] border-dashed border-[#E5AD7E] flex justify-center items-center group-hover:animate-putar absolute"></div>
@@ -93,9 +96,7 @@ const Home = () => {
             />
             <div className="w-[200px] h-[100px] bg-white p-2 absolute -top-[120px] -right-2 sm:right-[30px] sm:translate-x-1/2 rounded-lg hidden opacity-0 md:group-hover:inline group-hover:opacity-100 ">
               <p className="text-[10px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate vel sed dignissimos temporibus reprehenderit
-                reiciendis sit molestiae ab distinctio ut...{" "}
+              The Church of the Holy Sepulchre is a church in the Christian Quarter of the Old City of Jerusalem. According to traditions dating back to the 4th century, it contains two sites consid...
                 <span className="md:hidden text-blue-500 underline">
                   Read more
                 </span>

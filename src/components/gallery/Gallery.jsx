@@ -4,8 +4,8 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const Access_Key = "dSPvEpMqL1dX1X65RJItyi_MIFmLD9eBv3e-ebJtKu8";
 
-const DomeGallery = (props) => {
-  console.log(props)
+const Gallery = (props) => {
+
   const [images, setImages] = useState([]);
   const [zoom, setZoom] = useState({ img: "", i: -1 });
 
@@ -15,6 +15,7 @@ const DomeGallery = (props) => {
     );
     const dataJ = await data.json();
     const result = dataJ.results;
+    console.log(result);
     setImages(result);
   };
   useEffect(() => {
@@ -71,7 +72,7 @@ const DomeGallery = (props) => {
             className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer rotate-180 opacity-50 hover:opacity-100"
             onClick={() => arrows('left')}
           />
-          <img src={zoom.img.urls.full} className="h-full object-contain" />
+          <img src={zoom.img.urls.regular} className="h-full object-contain" />
         </div>
       ) : (
         <div className="w-full h-full">
@@ -96,4 +97,4 @@ const DomeGallery = (props) => {
   );
 };
 
-export default DomeGallery;
+export default Gallery;
