@@ -1,13 +1,14 @@
 import { useState } from "react";
 import logo from "../assets/logo-white.png";
-// import dom from "../assets/dome-of-rock2.webp";
+import { Icon } from "@iconify/react";
 import DomeRockStructure from "../assets/DomeRockStructure.jpg";
 import DomeRockStructure2 from "../assets/DomeRockStructure2.jpg";
 import innerDom from "../assets/inner-dom.jpg";
 import outerDec from "../assets/outer-decoration.jpg";
 import Gallery from "./gallery/Gallery";
 
-const dom = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/%D7%94%D7%A8_%D7%94%D7%91%D7%99%D7%AA_%D7%9E%D7%93%D7%A8%D7%95%D7%9D_%D7%9E%D7%A2%D7%A8%D7%91.jpg/1280px-%D7%94%D7%A8_%D7%94%D7%91%D7%99%D7%AA_%D7%9E%D7%93%D7%A8%D7%95%D7%9D_%D7%9E%D7%A2%D7%A8%D7%91.jpg'
+const dom =
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/%D7%94%D7%A8_%D7%94%D7%91%D7%99%D7%AA_%D7%9E%D7%93%D7%A8%D7%95%D7%9D_%D7%9E%D7%A2%D7%A8%D7%91.jpg/1280px-%D7%94%D7%A8_%D7%94%D7%91%D7%99%D7%AA_%D7%9E%D7%93%D7%A8%D7%95%D7%9D_%D7%9E%D7%A2%D7%A8%D7%91.jpg";
 
 const DomOfRock = () => {
   const [state, setState] = useState({ h: 1, e: 0, g: 0 });
@@ -27,6 +28,15 @@ const DomOfRock = () => {
         title="Home"
       >
         <img src={logo} alt="logo" className="h-[40px] drop-shadow-lg" />
+        <div className="opacity-30">
+          <Icon
+            icon="material-symbols:arrow-right-alt-rounded"
+            color="white"
+            className="-rotate-90 -ml-1 mt-2"
+            width="25"
+          />
+          <p className="text-white rotate-90 -ml-2 mt-1">back</p>
+        </div>
       </div>
 
       {/* content menu */}
@@ -180,7 +190,7 @@ const DomOfRock = () => {
             state.g ? "inline" : "hidden"
           }`}
         >
-          <Gallery props={'al aqsa'} />
+          <Gallery props={"al aqsa"} />
         </div>
       </div>
     </div>

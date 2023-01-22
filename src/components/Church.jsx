@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Icon } from '@iconify/react';
 import logo from "../assets/logo-white.png";
 import church from "../assets/church.webp";
 import church2 from "../assets/church2.webp";
@@ -24,6 +25,15 @@ const Church = () => {
         title="Home"
       >
         <img src={logo} alt="logo" className="h-[40px] drop-shadow-lg" />
+        <div className="opacity-30">
+          <Icon
+            icon="material-symbols:arrow-right-alt-rounded"
+            color="white"
+            className="-rotate-90 -ml-1 mt-2"
+            width="25"
+          />
+          <p className="text-white rotate-90 -ml-2 mt-1">back</p>
+        </div>
       </div>
 
       {/* content menu */}
