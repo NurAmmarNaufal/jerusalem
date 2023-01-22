@@ -21,14 +21,18 @@ const DomOfRock = () => {
     <div className="bg-[#222123] h-screen w-screen relative md:flex md:pt-[50px]">
       {/* logo */}
       <div
-        className="absolute top-[30px] left-[30px] cursor-pointer"
-        onClick={() => {
-          window.open("/", "_self");
-        }}
+        className="absolute top-[30px] left-[30px]"
         title="Home"
       >
-        <img src={logo} alt="logo" className="h-[40px] drop-shadow-lg" />
-        <div className="opacity-30">
+        <img
+          src={logo}
+          alt="logo"
+          className="h-[40px] drop-shadow-lg cursor-pointer"
+          onClick={() => {
+            window.open("/", "_self");
+          }}
+        />
+        <div className="opacity-30 cursor-default">
           <Icon
             icon="material-symbols:arrow-right-alt-rounded"
             color="white"
